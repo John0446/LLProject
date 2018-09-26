@@ -1,0 +1,12 @@
+E:\LL Project\LLProject\LLProject\bin\Debug\LLProject.exe.config
+E:\LL Project\LLProject\LLProject\bin\Debug\LLProject.exe
+E:\LL Project\LLProject\LLProject\bin\Debug\LLProject.pdb
+E:\LL Project\LLProject\LLProject\obj\Debug\LLProject.Form1.resources
+E:\LL Project\LLProject\LLProject\obj\Debug\LLProject.Properties.Resources.resources
+E:\LL Project\LLProject\LLProject\obj\Debug\LLProject.csproj.GenerateResource.cache
+E:\LL Project\LLProject\LLProject\obj\Debug\LLProject.csproj.CoreCompileInputs.cache
+E:\LL Project\LLProject\LLProject\obj\Debug\LLProject.csproj.CopyComplete
+E:\LL Project\LLProject\LLProject\obj\Debug\LLProject.exe
+E:\LL Project\LLProject\LLProject\obj\Debug\LLProject.pdb
+E:\LL Project\LLProject\LLProject\bin\Debug\Bunifu_UI_v1.5.3.dll
+E:\LL Project\LLProject\LLProject\obj\Debug\LLProject.csprojAssemblyReference.cache
