@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace LLProject
 {
-    public partial class frmiteminfo : Form
+    public partial class frmiteminfo : MaterialSkin.Controls.MaterialForm
     {
         public frmiteminfo()
         {

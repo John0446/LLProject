@@ -10,3 +10,21 @@ E:\LL Project\LLProject\LLProject\obj\Debug\LLProject.exe
 E:\LL Project\LLProject\LLProject\obj\Debug\LLProject.pdb
 E:\LL Project\LLProject\LLProject\bin\Debug\Bunifu_UI_v1.5.3.dll
 E:\LL Project\LLProject\LLProject\obj\Debug\LLProject.csprojAssemblyReference.cache
+F:\LLProject\LLProject\LLProject\LLProject\bin\Debug\LLProject.exe.config
+F:\LLProject\LLProject\LLProject\LLProject\bin\Debug\LLProject.exe
+F:\LLProject\LLProject\LLProject\LLProject\bin\Debug\LLProject.pdb
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.csprojAssemblyReference.cache
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.frmcustomerinfo.resources
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.frmiteminfo.resources
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.Form1.resources
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.frmsalesinfo.resources
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.frmstockinfo.resources
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.Properties.Resources.resources
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.csproj.GenerateResource.cache
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.csproj.CoreCompileInputs.cache
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.csproj.CopyComplete
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.exe
+F:\LLProject\LLProject\LLProject\LLProject\obj\Debug\LLProject.pdb
+F:\LLProject\LLProject\LLProject\LLProject\bin\Debug\MaterialSkin.dll
+F:\LLProject\LLProject\LLProject\LLProject\bin\Debug\EntityFramework.dll
+F:\LLProject\LLProject\LLProject\LLProject\bin\Debug\EntityFramework.xml

@@ -36,8 +36,18 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\Niroshini John\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,51 +59,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmcustomerinfo.cs">
+    <Compile Include="Forms\frmcustomerinfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmcustomerinfo.Designer.cs">
+    <Compile Include="Forms\frmcustomerinfo.Designer.cs">
       <DependentUpon>frmcustomerinfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmiteminfo.cs">
+    <Compile Include="Forms\frmiteminfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmiteminfo.Designer.cs">
+    <Compile Include="Forms\frmiteminfo.Designer.cs">
       <DependentUpon>frmiteminfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmloginNew.cs">
+    <Compile Include="Forms\frmloginNew.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmloginNew.Designer.cs">
+    <Compile Include="Forms\frmloginNew.Designer.cs">
       <DependentUpon>frmloginNew.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmsalesinfo.cs">
+    <Compile Include="Forms\frmsalesinfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmsalesinfo.Designer.cs">
+    <Compile Include="Forms\frmsalesinfo.Designer.cs">
       <DependentUpon>frmsalesinfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmstockinfo.cs">
+    <Compile Include="Forms\frmstockinfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmstockinfo.Designer.cs">
+    <Compile Include="Forms\frmstockinfo.Designer.cs">
       <DependentUpon>frmstockinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Customer.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ItemInfo.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Login.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sale.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\StockIN.cs">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmcustomerinfo.resx">
+    <EmbeddedResource Include="Forms\frmcustomerinfo.resx">
       <DependentUpon>frmcustomerinfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmiteminfo.resx">
+    <EmbeddedResource Include="Forms\frmiteminfo.resx">
       <DependentUpon>frmiteminfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmloginNew.resx">
+    <EmbeddedResource Include="Forms\frmloginNew.resx">
       <DependentUpon>frmloginNew.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmsalesinfo.resx">
+    <EmbeddedResource Include="Forms\frmsalesinfo.resx">
       <DependentUpon>frmsalesinfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmstockinfo.resx">
+    <EmbeddedResource Include="Forms\frmstockinfo.resx">
       <DependentUpon>frmstockinfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -105,6 +145,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EntityDeploy Include="Model\Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -117,6 +165,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
