@@ -17,7 +17,7 @@ namespace LLProject
             InitializeComponent();
         }
 
-        public Model.LLProjectEntities db = new Model.LLProjectEntities();
+        public Model.jnLLPEntities db = new Model.jnLLPEntities();
         public Model.Login objModel = new Model.Login();
 
         private void Form1_Load(object sender, EventArgs e)
