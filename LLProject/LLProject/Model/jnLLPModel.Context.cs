@@ -13,10 +13,10 @@ namespace LLProject.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class LLProjectEntities : DbContext
+    public partial class jnLLPEntities : DbContext
     {
-        public LLProjectEntities()
-            : base("name=LLProjectEntities")
+        public jnLLPEntities()
+            : base("name=jnLLPEntities")
         {
         }
     

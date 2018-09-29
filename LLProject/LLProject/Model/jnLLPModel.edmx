@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="LLProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="DB_A41408_JohnBrittoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Customer">
           <Key>
             <PropertyRef Name="CusID" />
@@ -70,7 +70,7 @@
           <Property Name="Date" Type="varchar" MaxLength="50" />
           <Property Name="IsDelete" Type="varchar" MaxLength="50" />
         </EntityType>
-        <EntityContainer Name="LLProjectModelStoreContainer">
+        <EntityContainer Name="DB_A41408_JohnBrittoModelStoreContainer">
           <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ItemInfo" EntityType="Self.ItemInfo" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
@@ -81,7 +81,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="LLProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="DB_A41408_JohnBrittoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Customer">
           <Key>
             <PropertyRef Name="CusID" />
@@ -147,7 +147,7 @@
           <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="IsDelete" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="LLProjectEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="jnLLPEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Customers" EntityType="Self.Customer" />
           <EntitySet Name="ItemInfoes" EntityType="Self.ItemInfo" />
           <EntitySet Name="Logins" EntityType="Self.Login" />
@@ -159,9 +159,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="LLProjectModelStoreContainer" CdmEntityContainer="LLProjectEntities">
+        <EntityContainerMapping StorageEntityContainer="DB_A41408_JohnBrittoModelStoreContainer" CdmEntityContainer="jnLLPEntities">
           <EntitySetMapping Name="Customers">
-            <EntityTypeMapping TypeName="LLProjectModel.Customer">
+            <EntityTypeMapping TypeName="DB_A41408_JohnBrittoModel.Customer">
               <MappingFragment StoreEntitySet="Customer">
                 <ScalarProperty Name="CusID" ColumnName="CusID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -174,7 +174,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ItemInfoes">
-            <EntityTypeMapping TypeName="LLProjectModel.ItemInfo">
+            <EntityTypeMapping TypeName="DB_A41408_JohnBrittoModel.ItemInfo">
               <MappingFragment StoreEntitySet="ItemInfo">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="ItemName" ColumnName="ItemName" />
@@ -188,7 +188,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Logins">
-            <EntityTypeMapping TypeName="LLProjectModel.Login">
+            <EntityTypeMapping TypeName="DB_A41408_JohnBrittoModel.Login">
               <MappingFragment StoreEntitySet="Login">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="UName" ColumnName="UName" />
@@ -200,7 +200,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Sales">
-            <EntityTypeMapping TypeName="LLProjectModel.Sale">
+            <EntityTypeMapping TypeName="DB_A41408_JohnBrittoModel.Sale">
               <MappingFragment StoreEntitySet="Sales">
                 <ScalarProperty Name="SID" ColumnName="SID" />
                 <ScalarProperty Name="CusName" ColumnName="CusName" />
@@ -216,7 +216,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="StockINs">
-            <EntityTypeMapping TypeName="LLProjectModel.StockIN">
+            <EntityTypeMapping TypeName="DB_A41408_JohnBrittoModel.StockIN">
               <MappingFragment StoreEntitySet="StockIN">
                 <ScalarProperty Name="StockID" ColumnName="StockID" />
                 <ScalarProperty Name="ItemName" ColumnName="ItemName" />
