@@ -65,6 +65,12 @@
     <Compile Include="Forms\frmcustomerinfo.Designer.cs">
       <DependentUpon>frmcustomerinfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmdashboard.Designer.cs">
+      <DependentUpon>frmdashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmiteminfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\frmcustomerinfo.resx">
       <DependentUpon>frmcustomerinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmdashboard.resx">
+      <DependentUpon>frmdashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmiteminfo.resx">
       <DependentUpon>frmiteminfo.cs</DependentUpon>
