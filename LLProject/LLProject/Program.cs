@@ -17,7 +17,10 @@ namespace LLProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmiteminfo());
+<<<<<<< HEAD
             Application.Run(new frmcustomerinfo());
+=======
+>>>>>>> e2d998a00251463c419e6c09d6541081c56226f6
         }
     }
 }
