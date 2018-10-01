@@ -57,7 +57,7 @@
             this.gvItemInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvItemInfo.Location = new System.Drawing.Point(15, 60);
             this.gvItemInfo.Name = "gvItemInfo";
-            this.gvItemInfo.Size = new System.Drawing.Size(240, 489);
+            this.gvItemInfo.Size = new System.Drawing.Size(257, 529);
             this.gvItemInfo.TabIndex = 0;
             this.gvItemInfo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gvItemInfo_MouseClick);
             // 

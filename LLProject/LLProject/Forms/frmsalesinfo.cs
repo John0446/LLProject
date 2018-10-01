@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 namespace LLProject
 {
-    public partial class frmsalesinfo : Form
+    public partial class frmsalesinfo : MaterialSkin.Controls.MaterialForm
     {
         public frmsalesinfo()
         {
             InitializeComponent();
         }
-
+        Model.jnLLPEntities model = new Model.jnLLPEntities();
+        Model.Sale objmodel = new Model.Sale();
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
         {
 
@@ -32,9 +33,45 @@ namespace LLProject
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                objmodel.CusName = Convert.ToInt32(cbCustomerName.Text);
+                objmodel.ItemID = Convert.ToInt32(cbItem.Text);
+                objmodel.Qutantity = txtQuantity.Text;
+                objmodel.Price = txtPrice.Text;
+                objmodel.TotalAmount = txtTotalAmount.Text;
+                objmodel.Paid = txtpaid.Text;
+                objmodel.Balance = txtBalance.Text;
+                objmodel.Date = dateStart.Value.ToString();
+                model.Sales.Add(objmodel);
+                model.SaveChanges();
+                           
+
+            }
+            catch (Exception ex)
+
+            {
+                throw ex;
+            }
+
+            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void bunifuDropdown1_onItemSelected(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
